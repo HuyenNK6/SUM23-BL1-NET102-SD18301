@@ -24,3 +24,17 @@ namespace BAI_1_OnTap_OOP
         }
     }
 }
+/*
+ * BTVN: 
+ * 1. Xây dựng class ChoService.cs
+ * - Tạo List <Cho>
+ * 2. Trong Program.cs, tạo Menu (có vòng lặp)
+ * Menu gọi các chức năng bên ChoService sang:
+ * - Nhập danh sách
+ * - Xuất danh sách
+ * - Tìm kiếm theo mã
+ * - Liệt kê tất cả con chó có giới tính cái
+ * - Sửa cân nặng
+ * - Sắp xếp tăng dần theo cân nặng
+ * - Xóa khỏi danh sách
+ */
