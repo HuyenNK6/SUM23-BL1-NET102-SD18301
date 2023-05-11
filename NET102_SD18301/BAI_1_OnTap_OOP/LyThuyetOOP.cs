@@ -56,7 +56,7 @@ namespace BAI_1_OnTap_OOP
                thuộc tính và phương thức cần thiết của đối tượng trong lập trình.
                + Tính trừu tượng giúp tập trung vào những cốt lõi cần thiết của đối tượng thay vì quan tâm 
                đến cách nó thực hiện.
-               + Trong Java, sử dụng abstract class và abstract interface để có tính trừu tượng.
+               + Trong C#, sử dụng abstract class và abstract interface để có tính trừu tượng.
    3. Khái niệm
        - LỚP (CLASS): có thể xem lớp Class như 1 khuôn mẫu (template) của đối tượng (Object)
                + Trong đó bao gồm thuộc tính dữ liệu của đối tượng (FIELDS hay PROPERTIES) 
@@ -68,7 +68,7 @@ namespace BAI_1_OnTap_OOP
            + Attribute: các thuộc tính của đối tượng
            + Method: Phương thức hay còn gọi là hàm thành viên
                      1 phương thức là 1 nhóm lệnh cùng nhau thực hiện 1 tác vụ
-       - Từ khóa this trong java là 1 biến tham chiếu được sử dụng để tham chiếu tới đối tượng 
+       - Từ khóa this trong c# là 1 biến tham chiếu được sử dụng để tham chiếu tới đối tượng 
        của lớp hiện tại.
    */
     }

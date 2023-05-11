@@ -44,7 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cho.cs" />
+    <Compile Include="ChoService.cs" />
     <Compile Include="DongVat.cs" />
+    <Compile Include="LyThuyetOOP.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
