@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_6_COLLECTION", "BAI_6_C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_6_1_ArrayList_List", "BAI_6_1_ArrayList_List\BAI_6_1_ArrayList_List.csproj", "{F901F987-ACAF-45EE-A4D0-DCD8F8638A40}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_7_IMPLICITY_DYNAMIC", "BAI_7_IMPLICITY_DYNAMIC\BAI_7_IMPLICITY_DYNAMIC.csproj", "{157BDA2B-33A1-45DE-BBCF-9701ECFB3C64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{F901F987-ACAF-45EE-A4D0-DCD8F8638A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F901F987-ACAF-45EE-A4D0-DCD8F8638A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F901F987-ACAF-45EE-A4D0-DCD8F8638A40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{157BDA2B-33A1-45DE-BBCF-9701ECFB3C64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{157BDA2B-33A1-45DE-BBCF-9701ECFB3C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{157BDA2B-33A1-45DE-BBCF-9701ECFB3C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{157BDA2B-33A1-45DE-BBCF-9701ECFB3C64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C0B53458-D997-4D5F-9162-F765C39AD342}</ProjectGuid>
+    <ProjectGuid>{157BDA2B-33A1-45DE-BBCF-9701ECFB3C64}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BAI_6_COLLECTION</RootNamespace>
-    <AssemblyName>BAI_6_COLLECTION</AssemblyName>
+    <RootNamespace>BAI_7_IMPLICITY_DYNAMIC</RootNamespace>
+    <AssemblyName>BAI_7_IMPLICITY_DYNAMIC</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,7 +45,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ThucVat.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

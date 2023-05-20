@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -90,7 +91,10 @@ namespace BAI_6_COLLECTION
         #endregion
         static void Main(string[] args)
         {
-            DemoHashSet();
+            //DemoHashSet();
+            //DemoLinkedList();
+            //DemoHashTable();
+            DemoDictionary();
         }
 
         static void DemoHashSet()
@@ -111,15 +115,90 @@ namespace BAI_6_COLLECTION
         }
         static void DemoLinkedList()
         {
+            LinkedList<int> list = new LinkedList<int>();
+            list.AddLast(5);
+            list.AddLast(2);
+            list.AddLast(9);
+            list.AddLast(4);
+            list.AddFirst(3);
+            list.AddLast(8);
 
+            var node = list.First;
+            list.AddAfter(node, 10);
+
+            var node2 = list.AddLast(15);
+            list.AddBefore(node2, 20);
+
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("value 1= "+ list.Last.Previous.Value);
+            Console.WriteLine("value 2= "+ list.First.Next.Value);
         }
         static void DemoHashTable()
         {
+            //1. khởi tạo
+            Hashtable tableDV= new Hashtable();
+            //Ngoài ra cũng có thể khởi tạo 1 Hashtable chứa các phần tử được sao chép từ một Hashtable khác:
+            Hashtable tableAnimal = new Hashtable(tableDV);
+            //2. add
+            //Thêm giá trị vào Hashtable
+            //Khi thêm mới một phần tử vào Hastable thì danh sách sẽ tự sắp xếp theo thuật toán Hashtable để tìm kiếm nhanh hơn,
+            //chứ không thêm vào cuối như ArrayList
+            tableDV.Add("dog", "cho");
+            tableDV.Add("cat", "meo");
+            tableDV.Add("pig", "lon");
+            tableDV.Add("bird", "chim");
 
+            Console.WriteLine("cat= "+tableDV["cat"]);
+
+            foreach (DictionaryEntry item in tableDV)
+            {
+                Console.WriteLine(item.Key + " - "+ item.Value);
+            }
+            ////////////
+            Console.WriteLine("==========================");
+            //khởi tạo table thực vật
+            Hashtable tableTV= new Hashtable();
+            //thêm vào table
+            tableTV.Add(1, new ThucVat(11, "Co", 2));
+            tableTV.Add(2, new ThucVat(22, "Cay", 5));
+            tableTV.Add(3, new ThucVat(33, "Hoa", 1));
+            tableTV.Add(4, new ThucVat(44, "La", 2));
+            tableTV.Add("5", new ThucVat(44, "La", 2));
+            //duyệt
+            /* 
+            * In các phần tử trong Hashtable.
+            * Vì mỗi phần tử là 1 DictionaryEntry nên ta chỉ định kiểu dữ liệu cho item là DictionaryEntry luôn.
+            * Thử in ra màn hình cặp Key - Value của mỗi phần tử được duyệt.
+            */
+            foreach (DictionaryEntry item in tableTV)
+            {
+                Console.WriteLine(item.Key + " - " + item.Value);
+                ThucVat tv = (ThucVat) item.Value;
+                tv.Show();
+            }
+            foreach (ThucVat tv in tableTV.Values)
+            {
+                tv.Show();
+            }
         }
         static void DemoDictionary()
         {
-
+            //Dictionary dic = new Dictionary();
+            Dictionary<int,ThucVat> dic = new Dictionary<int, ThucVat>();
+            dic.Add(1, new ThucVat(11, "Co", 2));
+            dic.Add(2, new ThucVat(22, "Cay", 5));
+            dic.Add(3, new ThucVat(33, "Hoa", 1));
+            dic.Add(4, new ThucVat(44, "La", 2));
+            //dic.Add("5", new ThucVat(44, "La", 2));
+            foreach (var item in dic)
+            {
+                Console.WriteLine(item.Key + " - " + item.Value);
+                ThucVat tv = item.Value;
+                tv.Show();
+            }
         }
     }
 }
