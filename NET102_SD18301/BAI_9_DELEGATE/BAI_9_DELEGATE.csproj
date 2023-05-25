@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EFFC75BF-352F-4342-B7DF-EFA65780081D}</ProjectGuid>
+    <ProjectGuid>{FD106DC0-1836-4290-A6A5-FB102EF58408}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BAI_4_GENERIC</RootNamespace>
-    <AssemblyName>BAI_4_GENERIC</AssemblyName>
+    <RootNamespace>BAI_9_DELEGATE</RootNamespace>
+    <AssemblyName>BAI_9_DELEGATE</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FpolyList.cs" />
-    <Compile Include="MyClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

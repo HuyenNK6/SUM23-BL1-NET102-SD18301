@@ -9,6 +9,7 @@ namespace BAI_1_OnTap_OOP
     internal class Cho : DongVat
     {
         private string loai;
+        private double? canNang;
         public Cho()
         {
             Console.WriteLine("Đây là con chó");

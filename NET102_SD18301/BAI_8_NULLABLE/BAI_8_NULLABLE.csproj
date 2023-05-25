@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EFFC75BF-352F-4342-B7DF-EFA65780081D}</ProjectGuid>
+    <ProjectGuid>{848642C4-ED2C-46A6-917B-8ED66B0A9A78}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BAI_4_GENERIC</RootNamespace>
-    <AssemblyName>BAI_4_GENERIC</AssemblyName>
+    <RootNamespace>BAI_8_NULLABLE</RootNamespace>
+    <AssemblyName>BAI_8_NULLABLE</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FpolyList.cs" />
-    <Compile Include="MyClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

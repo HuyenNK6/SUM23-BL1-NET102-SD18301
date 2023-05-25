@@ -58,7 +58,20 @@ namespace BAI_4_GENERIC
             mc.Show();
             double result = mc.Show();
 
+            FpolyList<int> fpolyList = new FpolyList<int>();
+            fpolyList.Add(3);
+            fpolyList.Add(4);
+            fpolyList.Add(5);
+            fpolyList.Show();
 
+            fpolyList.RemoveAt(2);
+            fpolyList.Show();
+
+            FpolyList<string> list = new FpolyList<string>();
+            list.Add("fpt");
+            list.Add("poly");
+            list.Add("hanoi");
+            list.Show();
         }
     }
 }
