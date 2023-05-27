@@ -168,8 +168,11 @@ namespace BAI_9_DELEGATE
         //kiểm tra chuỗi có đúng định dạng là số int hay ko?
         public static bool CheckSo(string s)
         {
+            //return Regex.IsMatch(s, @"^[a-zA-Z0-9_]+@fpt.edu.vn$");
             return Regex.IsMatch(s, @"^[0-9]+$");
+            //return Regex.IsMatch(s, @"^[\d]+$");
         }
+        
         public static int NhapSo(Check check)
         {
             string input;
@@ -184,7 +187,24 @@ namespace BAI_9_DELEGATE
             } while (!check(input));
             return Convert.ToInt32(input);
         }
-
+        public static bool CheckEmail(string s)
+        {
+            return Regex.IsMatch(s, @"^[a-zA-Z0-9_]+@fpt.edu.vn$");
+        }
+        public static string NhapEmail(Check check)
+        {
+            string input;
+            do
+            {
+                Console.WriteLine("Nhập email: ");
+                input = Console.ReadLine();
+                if (!check(input))
+                {
+                    Console.WriteLine("Mời nhập lại!!!!");
+                }
+            } while (!check(input));
+            return input;
+        }
         #endregion
 
         static void Main(string[] args)
@@ -231,7 +251,11 @@ namespace BAI_9_DELEGATE
             #region Callback- bool
             Check check = CheckSo;
             int tuoi = NhapSo(check);
-            Console.WriteLine("Tuổi= "+ tuoi);
+            Console.WriteLine("Tuổi= " + tuoi);
+
+            Check check2 = CheckEmail;
+            string email = NhapEmail(check2);
+            Console.WriteLine("Email:  "+ email);
 
             #endregion
         }
@@ -240,4 +264,13 @@ namespace BAI_9_DELEGATE
 /*BTVN
  * tạo các phương thức NhapSDT, NhapEmail với kiểu trả về phù hợp
  * Có sử dụng Callback Delegate
+ * 
+ * SĐT: có 10 số: số 0 đầu tiên và 9 số tiếp theo
+ * Regex.IsMatch(s, @"^[0][0-9]{9}$");
+ * Regex.IsMatch(s, @"^[0][\d]{9}$");
+ * 
+ * Email: đuôi @fpt.edu.vn
+ * Regex.IsMatch(s, @"^[a-zA-Z0-9_]+@fpt\.edu\.vn$");
+ * 
+ * 
  */
