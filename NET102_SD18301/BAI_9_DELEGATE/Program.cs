@@ -227,6 +227,7 @@ namespace BAI_9_DELEGATE
             tien = TinhHocLai;
             Console.WriteLine("Học lại= " + tien(3));
             #endregion
+
             #region Multicast Delegate
             Console.WriteLine("---------Multicast Delegate-----");
             InThongTin thongTin = InLoiToTinh;
