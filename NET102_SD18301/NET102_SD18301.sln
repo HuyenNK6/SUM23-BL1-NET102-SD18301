@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_13_EXCEPTION", "BAI_13_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_14_FILE", "BAI_14_FILE\BAI_14_FILE.csproj", "{A6823BC8-55AE-4401-AB9A-D7C2CA66CAE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_15_FILE_DOI_TUONG", "BAI_15_FILE_DOI_TUONG\BAI_15_FILE_DOI_TUONG.csproj", "{E2F1FC5B-9A0F-4B63-8986-E25C25F4D25A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{A6823BC8-55AE-4401-AB9A-D7C2CA66CAE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6823BC8-55AE-4401-AB9A-D7C2CA66CAE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6823BC8-55AE-4401-AB9A-D7C2CA66CAE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2F1FC5B-9A0F-4B63-8986-E25C25F4D25A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2F1FC5B-9A0F-4B63-8986-E25C25F4D25A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2F1FC5B-9A0F-4B63-8986-E25C25F4D25A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2F1FC5B-9A0F-4B63-8986-E25C25F4D25A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
