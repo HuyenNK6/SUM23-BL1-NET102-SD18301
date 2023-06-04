@@ -24,7 +24,8 @@ namespace BAI_15_FILE_DOI_TUONG
         {
             Console.OutputEncoding = Encoding.Unicode;
             Console.InputEncoding = Encoding.Unicode;
-            Menu();
+            //Menu();
+            Menu_Bin();
         }
         static void Menu()
         {
@@ -43,7 +44,7 @@ namespace BAI_15_FILE_DOI_TUONG
 
             // string path = "Student.txt";
             //file mới được tạo rỗng
-           // File.WriteAllText(path, "");
+            // File.WriteAllText(path, "");
 
             int chon;
             do
@@ -85,6 +86,27 @@ namespace BAI_15_FILE_DOI_TUONG
                         break;
                 }
             } while (chon != 0);
+        }
+
+        static void Menu_Bin()
+        {
+            List<Student> lstStudent = new List<Student>()
+            {
+                new Student("PH1", "Hoang", 2004, "PTPM"),
+                new Student("PH2", "Anh", 2000, "PTPM"),
+                new Student("PH3", "Mai", 2006, "PTPM"),
+                new Student("PH4", "Tuan", 2001, "PTPM"),
+                new Student("PH5", "Long", 2002, "PTPM"),
+            };
+            BIN_SERVICE binService = new BIN_SERVICE();
+            // string path = @"D:\FPT Polytechnic\FPL-4. SUM 2023\Block 1\4-SD18301-NET102\NET102_SD18301\SUM23-BL1-NET102-SD18301\NET102_SD18301\BAI_15_FILE_DOI_TUONG\FileStudent.bin";
+            string path = "Student.bin";
+            binService.GhiFile(path, lstStudent);
+            List<Student> lst = binService.DocFile(path);
+            foreach (var item in lst)
+            {
+                item.InThongTin();
+            }
         }
     }
 }

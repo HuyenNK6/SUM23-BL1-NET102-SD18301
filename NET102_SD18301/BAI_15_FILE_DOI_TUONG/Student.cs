@@ -5,7 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BAI_15_FILE_DOI_TUONG
-{//ID – string, Ten – string, Ns– int, Nganh -string
+{
+    /* [Serializable] được gọi là attribute (thuộc tính). 
+   * Attribute này cho phép BinaryFormatter được truy xuất thông tin của object 
+   * cho mục đích serialization. 
+   * Thiếu attribute này, ở giai đoạn runtime chương trình sẽ báo lỗi 
+   * System.Runtime.Serialization.SerializationException 
+   * ‘Type is not marked as serializable’.
+   */
+    [Serializable]
     internal class Student
     {
         private string id;
