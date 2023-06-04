@@ -63,5 +63,43 @@ namespace BAI_15_FILE_DOI_TUONG
                 Console.WriteLine("File ko tồn tại!!!");
             }
         }
+    
+        //chỉ cần truyền tham số là path
+        //sau khi đọc -> trả về cả 1 list student đầy đủ & chính xác
+        public List<Student> DocFile(string path)
+        {
+            List<Student> lstStudent = new List<Student>();
+            //đọc tất cả các dòng trong file txt
+            string[] lines = File.ReadAllLines(path);
+            //duyệt từng dòng line
+            foreach (var line in lines)
+            {
+                if(line.Trim().Length == 0)
+                {
+                    continue;//bỏ qua vòng hiện tại -> vòng sau
+                }
+                else
+                {
+                    //cắt dòng line thành nhiều chuỗi con
+                    //ngăn cách nhau bởi dấu |
+                    string[] attributes = line.Split('|');
+                    //test thử
+                    //for (int i = 0; i < attributes.Length; i++)
+                    //{
+                    //    Console.WriteLine($"att[{i}]= {attributes[i]}");
+                    //}
+                    //mỗi dòng line là 1 student
+                    Student st = new Student();
+                    st.Id = attributes[0].Trim();
+                    st.Ten = attributes[1].Trim();
+                    st.NamSinh = Convert.ToInt32(attributes[2].Trim());
+                    st.Nganh = attributes[3].Trim();
+                    //thêm đối tượng vào danh sách
+                    lstStudent.Add(st);
+                }
+            }
+            return lstStudent;
+        }
+    
     }
 }

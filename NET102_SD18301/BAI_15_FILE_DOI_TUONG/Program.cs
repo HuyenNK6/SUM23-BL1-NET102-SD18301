@@ -40,10 +40,10 @@ namespace BAI_15_FILE_DOI_TUONG
             };
             //nếu file tồn tại
             string path = @"D:\FPT Polytechnic\FPL-4. SUM 2023\Block 1\4-SD18301-NET102\NET102_SD18301\SUM23-BL1-NET102-SD18301\NET102_SD18301\BAI_15_FILE_DOI_TUONG\FileStudent.txt";
-           
-           // string path = "Student.txt";
+
+            // string path = "Student.txt";
             //file mới được tạo rỗng
-            File.WriteAllText(path, "");
+           // File.WriteAllText(path, "");
 
             int chon;
             do
@@ -66,10 +66,16 @@ namespace BAI_15_FILE_DOI_TUONG
                         service.XuatDS(lstStudent);
                         break;
                     case 3:
+                        File.WriteAllText(path, "");
                         service.GhiFile(path, lstStudent);
                         break;
                     case 4:
-                        //BTVN
+                        List<Student> lst = service.DocFile(path);
+                        Console.WriteLine("Danh sách Student: ");
+                        foreach (var item in lst)
+                        {
+                            item.InThongTin();
+                        }
                         break;
                     case 0:
                         Environment.Exit(0);
@@ -78,7 +84,7 @@ namespace BAI_15_FILE_DOI_TUONG
                         Console.WriteLine("Moi nhap lai!!!");
                         break;
                 }
-            } while (chon!=0);
+            } while (chon != 0);
         }
     }
 }
