@@ -59,13 +59,45 @@ namespace BAI_18_DE_TONG_HOP
 
         public void GhiFile(string path)
         {
-
+            if (File.Exists(path))
+            {
+                foreach (var item in _lstSachs)
+                {
+                    string line = item.ObjToString();
+                    File.AppendAllText(path, line);
+                }
+                Console.WriteLine("Ghi file thành công!!!");
+            }
+            else
+            {
+                Console.WriteLine("File ko tồn tại!!!");
+            }
         }
         public List<Sach> DocFile(string path)
         {
-            List<Sach> lstStudent = new List<Sach>();
-            
-            return lstStudent;
+            List<Sach> list = new List<Sach>();
+            string[] lines = File.ReadAllLines(path);
+            foreach (var line in lines)
+            {
+                if (line.Trim().Length == 0)
+                {
+                    continue;
+                }
+                else
+                {
+                    string[] attributes = line.Split('|');
+                
+                    Sach s = new Sach();
+                    s.Id = Convert.ToInt32(attributes[0].Trim());
+                    s.Ten = attributes[1].Trim();
+                    s.TheLoai = attributes[2].Trim();
+                    s.NamXuatBan = Convert.ToInt32(attributes[3].Trim());
+                    s.Gia = Convert.ToDouble(attributes[4].Trim());
+
+                    list.Add(s);
+                }
+            }
+            return list;
         }
 
     }

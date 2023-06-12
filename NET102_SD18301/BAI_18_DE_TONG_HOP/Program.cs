@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +19,8 @@ namespace BAI_18_DE_TONG_HOP
         static void Menu()
         {
             SachService service = new SachService();
+            //đường dẫn các bạn tự tạo
+            string path = @"D:\FPT Polytechnic\FPL-4. SUM 2023\Block 1\4-SD18301-NET102\NET102_SD18301\SUM23-BL1-NET102-SD18301\NET102_SD18301\BAI_18_DE_TONG_HOP\FileSach.txt";
             int chon;
             Console.WriteLine(" 1. Nhập 1 đối tượng hoặc danh sách đối tượng\r\n" +
                    "2. Xuất danh sách đối tượng\r\n" +
@@ -48,6 +51,17 @@ namespace BAI_18_DE_TONG_HOP
                         break;
                     case 2:
                         service.XuatDS();
+                        break; 
+                    case 3:
+                        File.WriteAllText(path, "");
+                        service.GhiFile(path);
+                        break;
+                    case 4:
+                        List<Sach> lst= service.DocFile(path);
+                        foreach (var item in lst)
+                        {
+                            item.InThongTin();
+                        }
                         break;
                     case 0:
                         Environment.Exit(0);

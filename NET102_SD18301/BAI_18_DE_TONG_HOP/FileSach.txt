@@ -1,0 +1,6 @@
+100001|Hạt giống tâm hồn|Self-help|2019|90000
+100002|Phân tích kỹ thuật|Khoa học|2021|120000
+100003|The Discoverers|Khoa học|2015|150000
+100004|Rùa và thỏ|Truyện|2010|50000
+100005|Vũ trụ|Khoa học|2023|80000
+100005|Đắc nhân tâm|Self-help|2022|100000

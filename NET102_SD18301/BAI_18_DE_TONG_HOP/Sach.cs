@@ -38,5 +38,9 @@ namespace BAI_18_DE_TONG_HOP
         {
             Console.WriteLine($"{id}|{ten}|{theLoai}|{namXuatBan}|{gia}");
         }
+        public string ObjToString()
+        {
+            return $"{id}|{ten}|{theLoai}|{namXuatBan}|{gia}\n";
+        }
     }
 }
