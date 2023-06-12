@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_16_LAMBDA", "BAI_16_LAM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_17_LINQ", "BAI_17_LINQ\BAI_17_LINQ.csproj", "{05048721-7427-49EC-B6A8-E2346F7C7B9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_18_DE_TONG_HOP", "BAI_18_DE_TONG_HOP\BAI_18_DE_TONG_HOP.csproj", "{4EC722A8-874C-4361-8B76-A104DA75C502}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{05048721-7427-49EC-B6A8-E2346F7C7B9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05048721-7427-49EC-B6A8-E2346F7C7B9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05048721-7427-49EC-B6A8-E2346F7C7B9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EC722A8-874C-4361-8B76-A104DA75C502}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EC722A8-874C-4361-8B76-A104DA75C502}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EC722A8-874C-4361-8B76-A104DA75C502}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EC722A8-874C-4361-8B76-A104DA75C502}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

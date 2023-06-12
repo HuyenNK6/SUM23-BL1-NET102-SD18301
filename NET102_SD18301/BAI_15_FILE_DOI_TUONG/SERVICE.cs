@@ -101,5 +101,13 @@ namespace BAI_15_FILE_DOI_TUONG
             return lstStudent;
         }
     
+        public void SapXep()
+        {
+
+        }
+        public int Count()
+        {
+            return 0;
+        }
     }
 }
