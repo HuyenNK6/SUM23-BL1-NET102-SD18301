@@ -28,9 +28,9 @@ namespace BAI_18_DE_TONG_HOP
                    "4. Đọc file đối tượng\r\nÁP DỤNG LINQ\r\n" +
                    "5. Sắp xếp giảm dần theo năm xuất bản\r\n" +
                    "6. Sắp xếp tăng dần theo giá\r\n" +
-                   "7. Tìm kiếm sách theo Code\r\n" +
-                   "8. Xóa Sách theo code\r\n" +
-                   "9. Sửa thông tin của Sách theo code\r\n" +
+                   "7. Tìm kiếm sách theo ID\r\n" +
+                   "8. Xóa Sách theo ID\r\n" +
+                   "9. Sửa thông tin của Sách theo ID\r\n" +
                    "10. Xuất danh sách các Sách có giá trong khoảng người dùng nhập\r\n" +
                    "11. Xuất danh sách các Sách được xuất bản sau năm 2000\r\n" +
                    "12. Tìm tất cả Sách có thể loại chính xác là Sách khoa học\r\n" +
@@ -62,6 +62,22 @@ namespace BAI_18_DE_TONG_HOP
                         {
                             item.InThongTin();
                         }
+                        break;
+                    case 5:
+                        service.SapXepGiamDanTheoNamXB();
+                        break;
+                    case 6:
+                        service.SapXepTangDanTheoGia();
+                        break;
+                    case 7:
+                        service.TimKiemTheoID();
+                        break;
+                    case 8:
+                        // service.XoaTheoID_Cach1();
+                        service.XoaTheoID_Cach2();
+                        break;
+                    case 9:
+                        service.SuaTheoID();
                         break;
                     case 0:
                         Environment.Exit(0);
