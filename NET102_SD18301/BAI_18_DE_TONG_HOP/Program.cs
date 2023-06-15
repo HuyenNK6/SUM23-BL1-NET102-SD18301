@@ -79,6 +79,15 @@ namespace BAI_18_DE_TONG_HOP
                     case 9:
                         service.SuaTheoID();
                         break;
+                    case 13:
+                        service.DSTheoTenGanDung();
+                        break;
+                    case 15:
+                        service.DemGiaNgoaiKhoang();
+                        break;
+                    case 16:
+                        service.Top5SachMoi();
+                        break;
                     case 0:
                         Environment.Exit(0);
                         break;

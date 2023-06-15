@@ -164,7 +164,7 @@ namespace BAI_9_DELEGATE
         #endregion
 
         #region Demo: Delegate Callback - bool
-        public delegate bool Check(string s);
+        public delegate bool Check <T>(T s);
         //kiểm tra chuỗi có đúng định dạng là số int hay ko?
         public static bool CheckSo(string s)
         {
@@ -173,7 +173,7 @@ namespace BAI_9_DELEGATE
             //return Regex.IsMatch(s, @"^[\d]+$");
         }
         
-        public static int NhapSo(Check check)
+        public static int NhapSo(Check<string> check)
         {
             string input;
             do
