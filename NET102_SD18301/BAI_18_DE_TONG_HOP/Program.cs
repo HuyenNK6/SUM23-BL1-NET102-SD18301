@@ -82,6 +82,9 @@ namespace BAI_18_DE_TONG_HOP
                     case 13:
                         service.DSTheoTenGanDung();
                         break;
+                    case 14:
+                        service.GiaMinMax();
+                        break;
                     case 15:
                         service.DemGiaNgoaiKhoang();
                         break;

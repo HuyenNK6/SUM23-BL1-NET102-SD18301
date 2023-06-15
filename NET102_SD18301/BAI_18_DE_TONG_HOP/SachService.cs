@@ -254,6 +254,15 @@ namespace BAI_18_DE_TONG_HOP
             }
         }
         //           "14. Xuất thông tin của Sách có giá lớn nhất và bé nhất\r\n" +
+       public void GiaMinMax()
+        {
+            var max = _lstSachs.Max(s => s.Gia);
+            var resultMax = _lstSachs.Where(s => s.Gia == max);
+            foreach (var item in resultMax)
+            {
+                item.InThongTin();
+            }
+        }
         //         "15. Đếm xem có tất cả bao nhiêu Sách có giá ngoài khoảng người dùng nhập\r\n" +
         public void DemGiaNgoaiKhoang()
         {
@@ -297,6 +306,7 @@ namespace BAI_18_DE_TONG_HOP
             {
                 item.InThongTin();
             }
+            
         }
     }
 }
